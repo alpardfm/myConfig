@@ -1,0 +1,33 @@
+align= center
+color=#FFFFFF
+separator="|"
+separator_block_width=15
+#markup=pango
+
+[motivation2]
+full_text= ☕ + 🚬 + </> = 🧘
+
+[motivation]
+full_text= Life is short ⏳, make it sweet 💝
+
+[battery]
+command=~/.config/i3blocks/scripts/battery.sh
+interval=persist
+
+[brightness]
+command=~/.config/i3blocks/scripts/brightness.sh
+interval=persist
+
+[memory]
+command=~/.config/i3blocks/scripts/ram.sh
+interval=persist
+
+[volume]
+command=~/.config/i3blocks/scripts/volume.sh
+interval=persist
+
+[datetime]
+command=~/.config/i3blocks/scripts/clock.sh
+interval=persist
+
+
