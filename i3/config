@@ -226,6 +226,7 @@ bindsym $mod+Control+Print mode ">> Screenshot"
 # recover brightness
 exec brightnessctl -r
 exec feh --bg-fil ~/Pictures/bgku2.jpg
+exec ~/Coding/myScripts/reminder/reminder.sh
 
 # shortcut rofi
 bindsym $mod+shift+w exec rofi -show windowcd
