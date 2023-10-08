@@ -205,6 +205,24 @@ mode ">> Set Brightness" {
 	bindsym $mod+Control+b mode "default"
 }
 bindsym $mod+Control+b mode ">> Set Brightness"
+
+# shortcut mode to screenshot
+mode ">> Screenshot" {
+	# Screenshots
+	bindsym p exec --no-startup-id maim "/home/$USER/Pictures/ImageSS/Alpardfm $(date).png"
+	bindsym Shift+p exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/ImageSS/Alpardfm $(date).png"
+
+	# Clipboard Screenshots
+	bindsym $mod+p exec --no-startup-id maim | xclip -selection clipboard -t image/png
+	bindsym $mod+Control+p exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+	
+	# exit from screenshot mode
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+Shift+Print mode "default"
+}
+bindsym $mod+Control+Print mode ">> Screenshot"
+
 # recover brightness
 exec brightnessctl -r
 exec feh --bg-fil ~/Pictures/bgku2.jpg
