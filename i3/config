@@ -184,7 +184,7 @@ mode ">> Set Volume" {
 	bindsym Shift+Down exec --no-startup-id amixer set 'Master' 10%-
 
 	# mute volume
-	bindsym space exec --no-startup-id amixer set 'Master' toggle
+	#bindsym space exec --no-startup-id amixer set 'Master' toggle
 
 	# back to normal
 	bindsym Return mode "default"
